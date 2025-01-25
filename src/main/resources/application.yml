@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: native,config
+  application:
+    name: config-server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+server:
+  port: 8888
